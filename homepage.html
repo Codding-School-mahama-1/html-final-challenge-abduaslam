@@ -19,12 +19,6 @@ Create a form with at least two labeled inputs (e.g., name and email).
 Add a table with at least three rows and two columns (e.g., contact methods and details).
 Use id attributes for at least one element.`
 
-Add a heading (e.g., <h1>Contact</h1>).
-Write a short paragraph explaining how to contact you.
-Create a form with at least two labeled inputs (e.g., name and email).
-Add a table with at least three rows and two columns (e.g., contact methods and details).
-Use id attributes for at least one element.
-
 
 2. Add navigation links at the top that link to sections within this homepage (use anchor tags and id attributes).
 3. Create at least two sections in this file (e.g., About, Contact) and link to them from the navigation.
@@ -46,17 +40,36 @@ This challenge will test your understanding of linking, structure, forms, tables
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
     <!-- Navigation bar: Link to sections and other HTML files -->
     <nav>
         <!-- Example: <a href="#about">About Section</a> | <a href="#contact">Contact Section</a> | <a href="about.html">About Page</a> | <a href="contact.html">Contact Page</a> -->
+         <a href="./Contact.html">Contact me</a><br>
+         <a href="./About.html">About me</a><br>
+         <a href="#sigin"> sigin</a><br>
+         <a href="#iframe-area"> Iframe</a><br>
+         <a href="#form-area">Form</a><br>
     </nav>
+    </header>
     <hr>
+    <main>
     <!-- Main content area -->
     <div class="main-content" id="main-content">
         <!-- Section 1: About  add id call it about section -->
-        <section >
+        <section id="sigin">
             <!-- Your About content here -->
-        </section>
+             <h1>sigin</h1>
+             <form action="for">
+                <label for="">User name </label><br>
+                <input type="text" user name><br><br>
+                
+                <label for="">Password</label><br>
+                <input type="password" placeholder="enter your password"><br>
+                <button>sigin</button>
+
+             </form>
+             
+        </section id="sign-up">
         <!-- Section 2: add id call it  Contact  -->
         <section >
             <!-- Your Contact content here -->
@@ -66,6 +79,9 @@ This challenge will test your understanding of linking, structure, forms, tables
     <!-- Embed another HTML file using iframe add a youtube video -->
     <div class="iframe-area" id="iframe-area">
         <!-- Example: <iframe src="about.html" width="400" height="200"></iframe> -->
+         <h2>iframe for vidio</h2>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/aRGdDy18qfY?si=xu8r-SeFrV0fqZso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <iframe src="https://airforshare.com/" style="width: 300px ;height: 350px;" frameborder="0"></iframe>
     </div>
     <hr>
     <!-- Small form with labels and inputs -->
@@ -79,6 +95,26 @@ This challenge will test your understanding of linking, structure, forms, tables
             <input type="submit" value="Submit">
         </form>
         -->
+        <h2>Html form</h2>
+        <form action="">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            
+            <label for="">Country</label><br>
+            <select name="" id="">
+                <option value="">Arabic</option>
+                <option value="">English</option>
+                <option value="">Kinyarwand</option>
+            </select>
+            <h4>Gender</h4>
+             <label for="">male</label><br>
+             <input type="radio" name="asd"><br>
+             <label for="">female</label><br>
+             <input type="radio"  name="asd"><br>
+             <input type="submit" value="Submit"><br>
+        </form>
     </div>
     <hr>
     <!-- Table to display names but dont copy mine add more names and more rows atleast 3 rows and columns -->
@@ -91,7 +127,35 @@ This challenge will test your understanding of linking, structure, forms, tables
             <tr><td>Charlie</td></tr>
         </table>
         -->
+        <table border="3">
+            <thead>
+                <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>abdu</td>
+                    <td>25</td>
+                    <td>072300</td>
+                </tr>
+                <tr>
+                    <td>mohammed</td>
+                    <td>30</td>
+                    <td>072356</td>
+                </tr>
+                <tr>
+                    <td>omer</td>
+                    <td>19</td>
+                    <td>079853</td>
+                
+                </tr>
+            </tbody>
+        </table>
     </div>
+    </main>
     <!-- Add comments throughout your code explaining your choices! -->
 </body>
 </html>
